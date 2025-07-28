@@ -117,10 +117,13 @@ bash 6_train_CoDTS.bash
 
 ## Citation
 ```
-@article{han2025codts,
+@inproceedings{han2025codts,
   title={CoDTS: Enhancing Sparsely Supervised Collaborative Perception with a Dual Teacher-Student Framework},
-  author={Yushan Han and Hui Zhang and Honglei Zhang and Jing Wang and Yidong Li},
-  journal={arXiv preprint arXiv:2412.08344},
+  author={Han, Yushan and Zhang, Hui and Zhang, Honglei and Wang, Jing and Li, Yidong},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={3},
+  pages={3366--3373},
   year={2025}
 }
 ```
