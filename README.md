@@ -1,4 +1,4 @@
-# CoDTS (AAAI 2025)
+# CoDTS (2025 AAAI Oral)
 
 CoDTS: Enhancing Sparsely Supervised Collaborative Perception with a Dual Teacher-Student Framework ([Paper](https://arxiv.org/abs/2412.08344))
 
