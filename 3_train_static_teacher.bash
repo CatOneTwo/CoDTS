@@ -22,7 +22,7 @@ SETTING=lidar_only_weakly_supervised
 METHOD=pointpillar_discograph
 # METHOD=pointpillar_v2vnet
 # METHOD=pointpillar_v2xvit
-
+jkafksbfib
 # 4.--------------fusion scheme--------------
 # FUSION_METHOD=late 
 # FUSION_METHOD=early 

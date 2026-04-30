@@ -16,6 +16,7 @@ SETTING=lidar_only_weakly_supervised
 # 3. --------------MAE method--------------
 METHOD=ssl_pointpillar_single_mae
 FUSION_METHOD=late 
+bfksbifb
 
 # single GPU
 CUDA_VISIBLE_DEVICES=0 python opencood/tools/train_mae.py \
