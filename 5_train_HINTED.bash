@@ -19,7 +19,7 @@ METHOD=discograph
 # METHOD=v2vnet
 
 YAML_FILE=opencood/hypes_yaml/$DATASET/$SETTING/pointpillar_${METHOD}.yaml
-
+sajfboauefb
 # single GPU: finetune，v2xsim, dair_v2x
 
 TEACHER_MODEL=${METHOD}_ws_single_mae_0.7 # 第一步
