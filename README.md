@@ -1,4 +1,4 @@
-# CoDTS (AAAI 2025)
+# CoDTS (AAAI 2025 Oral)
 
 CoDTS: Enhancing Sparsely Supervised Collaborative Perception with a Dual Teacher-Student Framework ([Paper](https://arxiv.org/abs/2412.08344))
 
@@ -45,7 +45,9 @@ data and install CoAlign. The installation is totally the same as OpenCOOD.
 
 The sparse label in this paper is in [Google Drive](https://drive.google.com/drive/folders/1U0CE1MXR23Tg9W1H4-cPdNF7PANoWcWP?usp=sharing), you can also produce sparse labels with codes in the "data_preparation" folder.
 
-**3. Put the folders of sparse labels for different datasets in the following:**
+The semi label in this paper is in [Google Drive](https://drive.google.com/drive/folders/1c8AdfAW1Dslh-_gftOGql32jx7L9SZIC?usp=drive_link), you can also produce semi labels with codes in the "data_preparation" folder.
+
+**3. Put the folders of sparse/semi labels for different datasets in the following:**
 ```bash
 CoDTS 
 ├── data_preparation # scripts to generate sparse labels
@@ -56,6 +58,7 @@ CoDTS
 │           ├── cooperative/label_world_sparse
 │           ├── infrastructure-side/label/virtuallidar_sparse
 │           ├── vehicle-side/label/lidar_sparse
+│           ├── train_(un)labeled_{0.1/0.2}.json # for semi-supervised
 │   ├── v2vreal
 │       ├── train
 │       ├── train_sparse # sparse label
@@ -103,6 +106,11 @@ bash 5_train_HINTED.bash
 [CoDTS: Enhancing Sparsely Supervised Collaborative Perception with a Dual Teacher-Student Framework (AAAI 2025)](https://arxiv.org/abs/2412.08344)
 ```bash
 bash 6_train_CoDTS.bash
+```
+
+Semi-supervised training and evaluation (Use train_semi_stage1.py on the labeled set first, and use train_semi_stage{2-6}.py to generate pseudo labels with different methods)
+```bash
+bash 7_train_semi.bash
 ```
 
 > **Note**: Both HINTED and CoDTS are based on static teachers in SSC3OD.
